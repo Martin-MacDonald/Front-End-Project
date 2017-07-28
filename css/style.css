@@ -18,7 +18,7 @@ header{
 	align-items: center;
 }
 
-header ul{
+#mainNav{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -32,11 +32,11 @@ header ul{
 	background-color: #031A6B;
 }
 
-header ul li{
+#mainNav li{
 	width: 100%;
 }
 
-header ul li a{
+#mainNav li a{
 	box-sizing: border-box;
 	display: inline-block;
 	width: 100%;
@@ -45,7 +45,7 @@ header ul li a{
 	text-align: center;
 }
 
-header ul li a:hover{
+#mainNav li a:hover{
 	background-color: #3590F3;
 }
 
@@ -69,7 +69,7 @@ header span .fa-times{
 }
 
 @media screen and (min-width:1000px){
-	header ul{
+	#mainNav{
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
@@ -81,11 +81,11 @@ header span .fa-times{
 		border: none;
 	}
 
-	header ul li{
+	#mainNav li{
 		width: initial;
 	}
 
-	header ul li a{
+	#mainNav li a{
 		display: inline-block;
 		width: initial;
 	}
