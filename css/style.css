@@ -10,23 +10,92 @@ a{
 }
 
 header{
+	position: relative;
 	width: 100%;
-	background-color: #0B3954;
+	height: 50px;
+	background-color: #031A6B;
+	display: flex;
+	align-items: center;
 }
 
 header ul{
-	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: solid black;
+	background-color: #031A6B;
+}
+
+header ul li{
+	width: 100%;
 }
 
 header ul li a{
 	display: inline-block;
-	padding: 15px 15px;
-	color: #84D2F6;
+	width: 100%;
+	padding: 17px 12px;
+	font-weight: bold;
+	text-align: center;
 }
 
 header ul li a:hover{
-	background-color: #1B98E0;
-	color: #fff;
+	background-color: #3590F3;
+}
+
+header img{
+	position: absolute;
+	left: 5px;
+}
+
+#mobNavDrop{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	font-size: 30px;
+}
+
+header span .fa-times{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 30px;
+}
+
+@media screen and (min-width:996px){
+	header ul{
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		position: relative;
+		width: initial;
+		height: initial;
+		justify-content: center;
+		background-color: initial;
+		border: none;
+	}
+
+	header ul li{
+		width: initial;
+	}
+
+	header ul li a{
+		display: inline-block;
+		width: initial;
+	}
+
+	#mobNavDrop{
+		display: none;
+	}
+
+	header span .fa-times{
+		display: none;
+	}
+
+
 }
