@@ -9,11 +9,38 @@ a{
 	color: inherit;
 }
 
+/*#cntDwnTimer{
+
+	background-color: #FDB833;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	flex-wrap: wrap;
+	color: pink;
+	font-size: 0.85em;
+}
+
+.timerBox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 5px;
+	color: white;
+}
+
+.cntDwnBox {
+	padding: 5px;
+	background-color: rgba(100,100,100,0.5);
+	font-size: 18px;
+	font-weight: bold;
+}*/
+
 header{
 	position: relative;
 	width: 100%;
 	height: 50px;
-	background-color: #031A6B;
+	background-color: #296EB4;
 	display: flex;
 	align-items: center;
 }
@@ -28,8 +55,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border: solid black;
-	background-color: #031A6B;
+	background-color: #296EB4;
 }
 
 #mainNav li{
@@ -41,7 +67,7 @@ header{
 	display: inline-block;
 	width: 100%;
 	padding: 17px 12px;
-	font-weight: bold;
+/*	font-weight: bold;*/
 	text-align: center;
 }
 
@@ -58,27 +84,24 @@ header img{
 	display: inline-block;
 	position: absolute;
 	right: 10px;
-	font-size: 30px;
+	font-size: 24px;
 }
 
 header span .fa-times{
 	position: absolute;
-	top: 10px;
-	right: 20px;
-	font-size: 30px;
+	top: 5px;
+	right: 10px;
+	font-size: 24px;
 }
 
 @media screen and (min-width:1000px){
 	#mainNav{
-		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
 		position: relative;
 		width: initial;
 		height: initial;
-		justify-content: center;
-		background-color: initial;
-		border: none;
+		background-color: transparent;
 	}
 
 	#mainNav li{
@@ -98,5 +121,10 @@ header span .fa-times{
 		display: none;
 	}
 
+}
 
+@media screen and (max-width: 1000px) and (max-height: 400px){
+	#mainNav li a{
+		padding: 10px 12px;
+	}
 }
